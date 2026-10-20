@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>임플란트 건강보험 계산기 · 진료지도</title>
+<meta name="description" content="만 65세 이상이 받는 임플란트의 건강보험 적용 개수와 본인부담금(급여 진료비의 30%)을 견적서 금액으로 알아보는 계산기.">
+<link rel="canonical" href="https://eplhansol.github.io/%EA%B3%84%EC%82%B0%EA%B8%B0/%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8/">
+<meta property="og:title" content="임플란트 건강보험 계산기 · 진료지도">
+<meta property="og:description" content="만 65세 이상이 받는 임플란트의 건강보험 적용 개수와 본인부담금(급여 진료비의 30%)을 견적서 금액으로 알아보는 계산기.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/site.css?v=f43b5a11">
+</head>
+<body>
+<a class="skip" href="#main">본문으로</a>
+<header class="bar"><div class="wrap bar-in"><a class="logo" href="/"><span class="mark" aria-hidden="true"></span>진료지도</a><nav class="nav" aria-label="주 메뉴"><a href="/%EB%B3%91%EC%9B%90%EC%A0%95%EB%B3%B4/">병원 정보</a><a href="/%EB%B3%91%EC%9B%90%EC%86%8C%EA%B0%9C/">병원 소개</a><a href="/%EC%9D%98%EB%A3%8C%EC%A0%95%EB%B3%B4/" aria-current="page" class="on">의료 정보</a><a href="/%EC%95%88%EB%82%B4/">이용 안내</a></nav><div class="cta"><a class="cta-b" href="/%EC%9D%98%EB%A3%8C%EC%A0%95%EB%B3%B4/">상황별 의료 정보</a><a class="cta-w" href="/%EB%B3%91%EC%9B%90%EC%A0%95%EB%B3%B4/">병원 정보 보기</a></div></div></header>
+<nav class="crumbs wrap" aria-label="현재 위치"><a href="/">홈</a> <span aria-hidden="true">/</span> <a href="/%EC%9D%98%EB%A3%8C%EC%A0%95%EB%B3%B4/">의료 정보</a> <span aria-hidden="true">/</span> <a href="/%EC%9D%98%EB%A3%8C%EC%A0%95%EB%B3%B4/#%EC%B9%98%EC%95%84">치아</a> <span aria-hidden="true">/</span> 임플란트 건강보험 계산기</nav>
+<main id="main">
+<div class="wrap"><div class="ph"><h1 class="pt">임플란트 건강보험 계산기</h1><p class="lede">건강보험 가입자·피부양자 기준</p></div>
+<form class="calc" id="calc" onsubmit="return false">
+<label class="fr"><span class="fl">만 나이</span><span class="fv"><input type="number" name="age" min="0" step="1" value="67" inputmode="numeric"><em>세</em></span></label>
+<label class="fr"><span class="fl">지금까지 건강보험으로 받은 임플란트</span><span class="fv"><select name="used"><option value="0">없음</option><option value="1">1개</option><option value="2">2개</option></select><em></em></span></label>
+<label class="fr"><span class="fl">이번에 심을 임플란트 개수</span><span class="fv"><input type="number" name="count" min="0" step="1" value="1" inputmode="numeric"><em>개</em></span></label>
+<label class="fr"><span class="fl">1개당 급여 진료비<small>견적서의 급여 진료비 합계(본인부담금+공단부담금)를 건강보험으로 심는 임플란트 개수(최대 2개)로 나눈 금액</small></span><span class="fv"><input type="number" name="coveredFee" min="0" step="10000" value="1200000" inputmode="numeric"><em>원</em></span></label>
+<label class="fr"><span class="fl">1개당 비급여 진료비<small>만 65세 전에 심거나 건강보험 적용 2개를 다 쓴 뒤 심는 임플란트 값</small></span><span class="fv"><input type="number" name="uncoveredFee" min="0" step="10000" value="1300000" inputmode="numeric"><em>원</em></span></label>
+<label class="fr"><span class="fl">그 밖의 비급여 금액<small>뼈이식·재료 차액 등</small></span><span class="fv"><input type="number" name="extra" min="0" step="10000" value="0" inputmode="numeric"><em>원</em></span></label>
+</form>
+<section class="result" id="res" aria-live="polite"></section>
+<section class="blk"><h2 class="st">계산 기준</h2><ul class="rules"><li>만 65세 이상, 평생 2개까지 건강보험 적용(치아 위치와 상관없음)</li><li>급여 진료비의 30% 본인부담(2018년 7월부터)</li><li>세 번째 임플란트부터 비급여</li><li>기준 재료 대신 다른 재료를 쓸 때 생기는 차액과 뼈이식 비용은 비급여</li><li>의료급여 수급자·차상위계층·산정특례 대상자 등은 본인부담률이 달라 여기서 계산할 수 없습니다. 문의: 국민건강보험공단 1577-1000</li><li>계산 결과는 예상 금액입니다.</li></ul><p class="src">실제 금액은 진료받을 병원에 확인하세요.</p></section></div>
+</main>
+<footer class="foot"><div class="wrap"><p class="fl">진료지도</p><p>진료시간은 바뀔 수 있으니 가기 전에 전화로 확인하세요. 이 사이트의 정보는 의사의 진료와 상담을 대신할 수 없습니다.</p><p class="fc">위급할 때는 119에 전화하세요. · © 2026 진료지도</p></div></footer>
+<script src="/static/core.js?v=82e56960"></script>
+<script src="/static/implant.js?v=aa78d89c"></script>
+</body>
+</html>
